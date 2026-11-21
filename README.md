@@ -11,6 +11,12 @@ Static Mera Bharat tourism site, now with a small Node.js backend:
 - Footer social icons link to the real social platforms.
 - Frontend design is unchanged; everything was wired to actually work.
 
+## Live
+
+The site is deployed on Render: https://mera-bharat-htt4.onrender.com
+
+Admin panel: https://mera-bharat-htt4.onrender.com/admin
+
 ## Run locally
 
 Requires Node.js 22.5 or newer (uses the built-in `node:sqlite`).
