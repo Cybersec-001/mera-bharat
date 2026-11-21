@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+   
+}
+
+/* Navbar Start */
+#navbar{
+    background: rgb(242, 235, 235);
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #0cc6ad;
+}
+#logo span .item{
+    color: #0cc6ad;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #0cc6ad;
+    color: white;
+}
+#navbar form button{
+    background: #0cc6ad;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home{
+    background-size: 100% 100%;
+    height: 90vh;
+
+    animation: slider 12s  infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url(taj2.jpg);}
+    35%{background-image: url(varansi.jpg);}
+    70%{background-image: url(kashmir.jpg);}
+    100%{background-image: url(goa.jpg);}
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 35px;
+    font-weight: 200px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+.home .content h1{
+    color: white;
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.changecontent::after{
+    content: ' ';
+    color: #0cc6ad;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 12s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Agra";}
+    35%{content: "Varanasi";}
+    70%{content: "Kashmir";}
+    100%{content: "Goa";}
+   
+   
+   
+} 
+.home .content p{
+    color: rgb(33, 195, 224);
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.home .content a{
+    padding: 10px;
+    background: #0cc6ad;    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book{ 
+    background: white;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #0cc6ad;
+}
+.book .card{
+    border-radius: 12px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 180px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #0cc6ad;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #0cc6ad;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card:hover{
+    transform: scale(1.1);   
+}
+.packages .card img{
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #0cc6ad;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #0cc6ad;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about h2 span{
+    color: #0cc6ad;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #0cc6ad;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+
+/* contact us */
+
+.contact{
+    padding: 80px;
+    text-align: center;
+    margin-top: 150;
+    background-color: #f9f9f9;
+    
+}
+.contact h3{
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.contact h3 span{
+    color: #0cc6ad;
+}
+.contact-info p{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+} 
+.contact-info li{
+    margin: 0 20px;
+    
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    
+    color: black;
+}
+.contact-info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+
+    width: 100%;
+}
+.form-group{
+    margin-top: 20;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px ;
+    margin-top: 30;
+    border: none;
+    box-shadow: 0px 5px 5px -6px black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0cc6ad;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+    margin-top: 20;
+}
+.form button:hover{
+    background-color: #ff7f50;
+}
+
+
+
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #0cc6ad;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #0cc6ad;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: rgb(56, 55, 55);
+}
+/* Footer End */
+/* Backend form status messages (added with backend wiring) */
+.form-status{
+    font-size: 1.4rem;
+    margin: 10px 20px;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+.form-status.pending{ color: #555; }
+.form-status.success{
+    color: #0a7d6c;
+    background: #e6f9f5;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.form-status.error{
+    color: #b00020;
+    background: #fdecea;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+/* Sign Up modal (matches site colors) */
+#signupModal .modal-title span{ color: #0cc6ad; }
+#signupModal .modal-content{ border-radius: 15px; }
+#signupModal input{ width: 100%; margin: 10px 0; }
+#signupModal .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #0cc6ad;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
